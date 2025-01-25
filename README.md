@@ -1,0 +1,1 @@
+It's fairly simple. Solve the riddle. input the correct answer. Reveal the hidden message. I only put this together to test the new things I've learned in coding. I'm fairly new and have only been learning for about a month now.
