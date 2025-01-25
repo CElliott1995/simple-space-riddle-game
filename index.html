@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Secret Message</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Can you unlock the secret message?</h2>
+
+      <p class="riddle">
+        What occurs once in a minute, twice in a moment, and never in ten
+        thousand years?
+      </p>
+
+      <input type="text" id="riddleAnswer" placeholder="Enter your answer" />
+      <button onclick="checkAnswer()">Submit Answer</button>
+
+      <p id="congratsMessage" class="hidden"></p>
+      <p id="hiddenMessage" class="hidden"></p>
+
+      <div id="confetti" class="hidden"></div>
+    </div>
+
+    <!-- Audio for sound effects -->
+    <audio
+      id="buttonClickSound"
+      src="audio/mixkit-interface-hint-notification-911.wav"
+    ></audio>
+    <audio
+      id="correctAnswerSound"
+      src="audio/mixkit-sci-fi-confirmation-914.wav"
+    ></audio>
+    <audio
+      id="incorrectAnswerSound"
+      src="audio/mixkit-sci-fi-reject-notification-896.wav"
+    ></audio>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>
